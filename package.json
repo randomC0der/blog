@@ -4,9 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rimraf ./_site",
-    "build": "npm run clean && webpack --mode production && eleventy"
+    "build": "run-s clean build:*",
+    "build:webpack": "webpack --mode production",
+    "build:eleventy": "eleventy",
+    "serve": "npm-run-all clean --parallel serve:*",
+    "serve:webpack": "webpack --mode development --watch",
+    "serve:eleventy": "eleventy --serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
