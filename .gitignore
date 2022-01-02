@@ -1,3 +1,8 @@
+# 11ty
+_site
+
+# webpack
+dist
 
 # Created by https://www.toptal.com/developers/gitignore/api/node,typings,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=node,typings,visualstudiocode
