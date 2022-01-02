@@ -20,6 +20,7 @@
   "homepage": "https://github.com/randomC0der/blog#readme",
   "private": true,
   "dependencies": {
+    "highlight.js": "^11.3.1",
     "normalize.css": "^8.0.1",
     "shariff": "^3.2.1",
     "vanilla-cookieconsent": "^2.7.2"
