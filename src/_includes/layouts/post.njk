@@ -7,7 +7,15 @@
 
     <link rel="stylesheet" href="/assets/css/tailwind.css">
   </head>
-  <body>
-    {{ content | safe }}
+  <body class="bg-slate-50">
+    <main class="items-center justify-between p-6 container mx-auto">
+      <article>
+        <h1 class="text-4xl sm:text-5xl tracking-wide text-center mb-10">{{title}}</h1>
+        <div class="p-10 prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-full">{{ content | safe }}</div>
+      </article>
+    </main>
+    <footer class="bg-gray-300 p-4 text-center">
+      Copyright
+    </footer>
   </body>
 </html>
