@@ -1,6 +1,7 @@
 const path = require("path");
 
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const RemoveEmptyScriptsPlugin = require('webpack-remove-empty-scripts');
 
 const isDev = process.env.APP_ENV === 'development';
 
@@ -43,5 +44,8 @@ module.exports = {
       },
     ],
   },
-  plugins: [new MiniCssExtractPlugin({ filename: path.join("..", 'css', `${baseFilename}.css`) })],
+  plugins: [
+    new RemoveEmptyScriptsPlugin({ verbose: isDev, enabled: !isDev }),
+    new MiniCssExtractPlugin({ filename: path.join("..", 'css', `${baseFilename}.css`) }),
+  ],
 };
