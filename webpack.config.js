@@ -9,7 +9,7 @@ const baseFilename = !isDev ? '[name]' : '[name].[contenthash]';
 
 module.exports = {
   entry: {
-    tailwind: "tailwindcss/tailwind.css",
+    normalize: "normalize.css",
   },
   output: {
     path: path.resolve(__dirname, "_site", "assets", "js"),
