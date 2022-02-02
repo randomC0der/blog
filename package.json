@@ -10,7 +10,7 @@
     "build:eleventy": "eleventy",
     "serve": "npm-run-all clean --parallel serve:*",
     "serve:webpack": "webpack --mode development --watch",
-    "serve:eleventy": "eleventy --serve",
+    "serve:eleventy": "node -e \"setTimeout(() => process.exit(0), 1000)\" && npx eleventy --serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,6 +25,8 @@
   "homepage": "https://github.com/randomC0der/blog#readme",
   "private": true,
   "dependencies": {
+    "@heise/embetty": "^3.0.8",
+    "lodash": "^4.17.21",
     "normalize.css": "^8.0.1",
     "shariff": "^3.2.1",
     "vanilla-cookieconsent": "^2.7.2"
@@ -35,6 +37,7 @@
     "@babel/core": "^7.16.7",
     "@babel/preset-env": "^7.16.7",
     "@fullhuman/postcss-purgecss": "^4.1.3",
+    "@mightyplow/eleventy-plugin-cache-buster": "^1.1.3",
     "autoprefixer": "^10.4.1",
     "babel-loader": "^8.2.3",
     "css-loader": "^6.5.1",
