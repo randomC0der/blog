@@ -1,0 +1,7 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>Duden</ShortName>
+  <Description>An unofficial open search interface for Tanoshii Japanese</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Image width="32" height="32" type="image/x-icon">https://www.duden.de/sites/default/res/D.ico</Image>
+  <Url type="text/html" template="https://www.duden.de/suchen/dudenonline/{searchTerms}"/>
+</OpenSearchDescription>
